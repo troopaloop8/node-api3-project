@@ -10,7 +10,7 @@ const QuoteList = props => {
     useEffect(() => {
         const id = props.id;
         const getQuotes = () => {
-            axios.get(`http://localhost:6996/users/${id}/posts`)
+            axios.get(`https://lotr-troop.herokuapp.com/users/${id}/posts`)
             .then(res => {
                 console.log("posts", res.data)
                 setQuotes([res.data])

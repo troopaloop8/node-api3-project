@@ -7,7 +7,7 @@ const HobbitList = () => {
     const [ hobbit, setHobbit ] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:6996/users')
+        axios.get('https://lotr-troop.herokuapp.com/users/')
         .then(res => {
             console.log(res.data)
             setHobbit(res.data)
